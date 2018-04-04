@@ -31,6 +31,7 @@ Using DOSE is a very simple three-step process.
 
 ## How To
 
+### Create a Result
 The whole point of DOSE is to get you results in a readable form of data. Appropriately, the first thing that you need to know how to create is a Result. Using PHP as an example language, we will create a very basic Result, which will be explained afterward.
 
 
@@ -55,6 +56,12 @@ In order of parameters:
 7. Placeholder - 0 by default.
 
 8. Placeholder - 0 by default.
+
+### Create a Table
+
+### Create a Scenario
+
+A scenario really is just a combination of tables. Some scenarios may have more than one "fight" going on, or more than one die rolling around.
 
 ## Examples
 
