@@ -59,6 +59,19 @@ In order of parameters:
 
 ### Create a Table
 
+A Table will contain one or more Results. You  can pre-construct them and include them, or you can construct them within the Table's own constructor. We will be doing the latter. The following will be a table with a "fill" of 100%; an equal (25%) chance of rolling between four different Results.
+
+```php
+new Table
+(
+  "My first table!",
+  new Result(4.0, "My first result!", DOSE_TYPE_DUMMY, 123, 1, 5, NULL, NULL), //25% chance to get 1 to 5 of dummy #123
+  new Result(4.0, "My second result!", DOSE_TYPE_DUMMY, 124, 2, 8, NULL, NULL), //25% chance to get 2 to 8 of dummy #124
+  new Result(4.0, "My third result!", DOSE_TYPE_DUMMY, 125, 1, 1, NULL, NULL), //etc...
+  new Result(4.0, "My fourth result!", DOSE_TYPE_DUMMY, 126, 2, 2, NULL, NULL)
+)
+```
+
 ### Create a Scenario
 
 A scenario really is just a combination of tables. Some scenarios may have more than one "fight" going on, or more than one die rolling around.
