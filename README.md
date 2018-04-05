@@ -87,7 +87,7 @@ $myscenario = new Scenario //we're actually putting it into a var this time
     new Result(4.0, "My first result!", DOSE_TYPE_DUMMY, 123, 1, 5, NULL, NULL), //25% chance to get 1 to 5 of dummy #123
     new Result(4.0, "My second result!", DOSE_TYPE_DUMMY, 124, 2, 8, NULL, NULL), //25% chance to get 2 to 8 of dummy #124
     new Result(4.0, "My third result!", DOSE_TYPE_DUMMY, 125, 1, 1, NULL, NULL), //etc...
-    new Result(4.0, "My fourth result!", DOSE_TYPE_DUMMY, 126, 2, 2, NULL, NULL)
+    new Result(4.0, "My fourth result!", DOSE_TYPE_DUMMY, 126, 2, 3, NULL, NULL)
   ),
   new Table
   (
@@ -109,6 +109,11 @@ The roll worked! View the results like so:
 ```php
 $myscenario->PrintRewardJSON();
 ```
+
+The Reward stack may look something like:
+
+1. Dummy 126 x2
+2. Dummy 155 x1
 
 
 ## Examples
