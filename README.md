@@ -96,11 +96,20 @@ $myscenario = new Scenario //we're actually putting it into a var this time
     new Result(30.0, "Rarer result 2", DOSE_TYPE_DUMMY, 166, 1, 1, NULL, NULL) //3.33%
   )
 )
+```
 
+The Scenario is complete! Now you need to actually run the Roll() function:
+
+```php
 $myscenario->Roll();
+```
 
+The roll worked! View the results like so:
+
+```php
 $myscenario->PrintRewardJSON();
 ```
+
 
 ## Examples
 
