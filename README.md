@@ -78,7 +78,7 @@ A scenario really is just a combination of tables. Some scenarios may have more 
 
 
 ```php
-new Scenario
+$myscenario = new Scenario //we're actually putting it into a var this time
 (
   "My first scenario!",
   new Table
@@ -96,6 +96,10 @@ new Scenario
     new Result(30.0, "Rarer result 2", DOSE_TYPE_DUMMY, 166, 1, 1, NULL, NULL) //3.33%
   )
 )
+
+$myscenario->Roll();
+
+$myscenario->PrintRewardJSON();
 ```
 
 ## Examples
