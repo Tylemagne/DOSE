@@ -123,7 +123,7 @@ The Reward stack may look something like:
 
 ### Runescape Chicken
 
-
+The following DOSE Scenario will be a 1:1 re-creation of Runescape's Chicken drop table according to [its wiki](http://oldschoolrunescape.wikia.com/wiki/Chicken):
 
 ```php
 $DsRunescapeChicken = new Scenario
