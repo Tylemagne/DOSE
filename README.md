@@ -121,4 +121,28 @@ The Reward stack may look something like:
 ### Minecraft
 
 
-### Runescape
+### Runescape Chicken
+
+
+
+```php
+$DsRunescapeChicken = new Scenario
+(
+  "Runescape chicken",
+  new Table
+  (
+    "Feather table",
+    new Result(1.2, "5-15 Feathers", DOSE_TYPE_ITEM, 906, 5, 15, NULL, NULL) //83% chance of 5-15 feathers
+  ),
+  new Table
+  (
+    "100% bones",
+    new Result(1.0, "Bones", DOSE_TYPE_ITEM, 56, 1, 1, NULL, NULL) //always drop 1 bones
+  ),
+  new Table
+  (
+    "100% meat",
+    new Result(1.0, "Raw chicken", DOSE_TYPE_ITEM, 1123, 1, 1, NULL, NULL) //always drop 1 raw chicken
+  )
+)
+```
