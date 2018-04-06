@@ -27,7 +27,7 @@ Using DOSE is a very simple three-step process.
 
 2. Call the Roll() method. This will instruct DOSE to "run" your scenario, and populate your currently empty Reward array. (Results become Rewards once rolled.)
 
-3. Access and act upon the Reward array. There are many ways you could do this, including accessing and reading the array as JSON. This is up to you. All the heavy lifting is already done. Once finished, you can ever run Roll() again on the same Scenario and completely reset the Reward array.
+3. Access and act upon the Reward array. There are many ways you could do this, including accessing and reading the array as JSON. This is up to you. All the heavy lifting is already done. Once finished, you can even run Roll() again on the same Scenario and completely reset the Reward array.
 
 ## How To
 
