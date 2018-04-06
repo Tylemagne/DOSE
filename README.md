@@ -118,12 +118,53 @@ The Reward stack may look something like:
 
 ## Examples
 
-### Minecraft
+### Minecraft Zombie
 
+As described by the [Minecraft wiki](https://minecraft.gamepedia.com/Zombie#Drops). Item IDs are dummies.
+
+```php
+$DsMinecraftZombie = new Scenario
+(
+  "Minecraft zombie",
+  new Table
+  (
+    "Flesh",
+    new Result(1.0, "0-2 Rotten flesh", DOSE_TYPE_ITEM, 991, 0, 2, NULL, NULL)
+  ),
+  new Table
+  (
+    "Special drops",
+    new Result(125.0, "Iron ingot", DOSE_TYPE_ITEM, 609, 1, 1, NULL, NULL), //0.08% chance
+    new Result(125.0, "Carrot", DOSE_TYPE_ITEM, 344, 1, 1, NULL, NULL),
+    new Result(125.0, "Potato", DOSE_TYPE_ITEM, 345, 1, 1, NULL, NULL)
+  )
+)
+
+if($lootingEnchantment == 1) //lvl 1 Looting
+{
+  $DsMinecraftZombie->EditDenominator("Iron ingot", 83.33); //modify to 1.2%
+  $DsMinecraftZombie->EditDenominator("Carrot", 83.33);
+  $DsMinecraftZombie->EditDenominator("Potato", 83.33);
+}
+
+else if($lootingEnchantment == 2) //lvl 2 Looting
+{
+  $DsMinecraftZombie->EditDenominator("Iron ingot", 66.66); //modify to 1.5%
+  $DsMinecraftZombie->EditDenominator("Carrot", 66.66);
+  $DsMinecraftZombie->EditDenominator("Potato", 66.66);
+}
+
+else if($lootingEnchantment == 3) //lvl 3 Looting
+{
+  $DsMinecraftZombie->EditDenominator("Iron ingot", 55.55); //modify to 1.8%
+  $DsMinecraftZombie->EditDenominator("Carrot", 55.55);
+  $DsMinecraftZombie->EditDenominator("Potato", 55.55);
+}
+```
 
 ### Runescape Chicken
 
-The following DOSE Scenario will be a 1:1 re-creation of Runescape's Chicken drop table according to [its wiki](http://oldschoolrunescape.wikia.com/wiki/Chicken):
+The following DOSE Scenario will be a 1:1 re-creation of Runescape's Chicken drop table according to [its wiki](http://oldschoolrunescape.wikia.com/wiki/Chicken). Item IDs are dummies.
 
 ```php
 $DsRunescapeChicken = new Scenario
