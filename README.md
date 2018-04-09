@@ -141,7 +141,7 @@ $DsMinecraftZombie = new Scenario
 )
 ```
 
-Some situations require conditional changes to frequencies. Thanks to EditDenominator(), DOSE can do it:
+Some situations require conditional changes to frequencies. Minecraft's zombies are a perfect example of this. There's an enchantment in the game that increases the drop rate of their special items we'll need to replicate. Thanks to EditDenominator(), DOSE can do it:
 
 ```php
 if($lootingEnchantment == 1) //lvl 1 Looting
