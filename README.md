@@ -139,7 +139,11 @@ $DsMinecraftZombie = new Scenario
     new Result(125.0, "Potato", DOSE_TYPE_ITEM, 345, 1, 1, NULL, NULL)
   )
 )
+```
 
+Some situations require conditional changes to frequencies. Thanks to EditDenominator(), DOSE can do it:
+
+```php
 if($lootingEnchantment == 1) //lvl 1 Looting
 {
   $DsMinecraftZombie->EditDenominator("Iron ingot", 83.33); //modify to 1.2%
