@@ -6,6 +6,11 @@ In order of completion goal.
 * C# (Unity)
 * C++
 
+# Todo
+* JSON factory method Scenario::BuildFromJSON($json)
+* Replace Dampen() with (Amplify)
+* Table clamping method (all or specific Table ID), automatically amplifies to 100% fill
+
 # Assets
 
 * Library - Just the DOSE code library files in a given language. Use this for project integration.
