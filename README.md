@@ -196,3 +196,24 @@ $DsRunescapeChicken = new Scenario
   )
 )
 ```
+
+### Might and Magic 6 Dwarf
+
+The following Scenario will be a 1:1 re-creation of MM6's Dwarf drop table according to [its wiki](http://mightandmagic.wikia.com/wiki/Dwarf_(MM6)). Item IDs are dummies.
+
+```php
+$DsMm6Dwarf = new Scenario
+(
+  "MM6 dwarf",
+  new Table
+  (
+    "Axe table",
+    new Result(20, "Axe", DOSE_TYPE_ITEM, 946, 1, 1, NULL, NULL) //5% chance of an axe
+  ),
+  new Table
+  (
+    "Gold, 5d10, 5-50",
+    new Result(1.0, "Gold", DOSE_TYPE_MONEY, 002, 5, 50, NULL, NULL) //always drop 5-50 gold
+  )
+)
+```
