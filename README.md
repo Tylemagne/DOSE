@@ -182,7 +182,7 @@ $DsRunescapeChicken = new Scenario
   new Table
   (
     "Feather table",
-    new Result(1.2, "5-15 Feathers", DOSE_TYPE_ITEM, 906, 5, 15, NULL, NULL) //83% chance of 5-15 feathers
+    new Result(1.2049, "5-15 Feathers", DOSE_TYPE_ITEM, 906, 5, 15, NULL, NULL) //83% chance of 5-15 feathers
   ),
   new Table
   (
