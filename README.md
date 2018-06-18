@@ -7,6 +7,7 @@ In order of completion goal.
 * C++
 
 # Todo
+* Build online DOSE JSON table generator and shell?
 * Remove placeholder arguments in constructors until they are needed
 * Improve debug information provision
 * JSON factory method Scenario::BuildFromJSON($json)
