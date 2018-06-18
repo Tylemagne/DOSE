@@ -10,8 +10,8 @@ In order of completion goal.
 * Remove placeholder arguments in constructors until they are needed
 * Improve debug information provision
 * JSON factory method Scenario::BuildFromJSON($json)
-* Replace Dampen() with (Amplify)
-* Table clamping method (all or specific Table ID), automatically amplifies to 100% fill
+* Replace Dampen() with Amplify()
+* Table clamping method (all or specific Table ID) - automatically amplifies to 100% fill
 
 # Assets
 
